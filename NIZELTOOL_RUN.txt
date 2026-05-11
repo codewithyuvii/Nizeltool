@@ -1,0 +1,22 @@
+Nezel OSINT - Run Requirements
+==============================
+
+Requirements:
+- Python 3.10 or newer
+- Internet connection
+- Python packages listed in requirements.txt
+
+Install:
+python -m pip install -r requirements.txt
+
+Run:
+python nizeltool.py
+
+Optional API template override:
+set NEZEL_PHONE_API_TEMPLATE=https://example.com/lookup?mobile={term}
+set NEZEL_VEHICLE_API_TEMPLATE=https://example.com/api?type=rc&term={term}
+
+Notes:
+- Use only for your own data or with proper permission.
+- Sensitive Aadhaar/ID-style fields are masked in the terminal output.
+- A Python script cannot permanently hide API keys from someone who can read and run it.
